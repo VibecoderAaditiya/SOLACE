@@ -1,42 +1,64 @@
 # SOLACE 🌿
 
-> A personal Mental Wellness journal designed for people who love writing, crafted with a modern, elegant touch.
+A mindful mental wellness and journaling app for iOS, crafted with SwiftUI.
 
-SOLACE combines mindful journaling with interactive wellness exercises to help you reflect, stabilize, and find daily balance.
+SOLACE blends daily reflection, guided breathing, and mood analytics into a peaceful, distraction-free environment to help you reflect, ground yourself, and build daily calm.
 
 ---
 
 ## ✨ Features
 
-- 📓 **Modern Wellness Journal**: Express your thoughts in a beautifully designed, distraction-free writing interface.
-- 🧘 **Interactive Exercises**:
-  - **4-7-8 Breathing**: Guided visual timer to reduce anxiety and calm the nervous system.
-  - **5-4-3-2-1 Grounding**: Step-by-step sensory exercise to center your focus during stressful moments.
-  - **Body Scan**: Guided muscle-relaxation routine to release physical tension.
-- 🌓 **Dynamic Theme Support**: Seamlessly switch between Light and Dark modes with custom adaptive color palettes designed for eye comfort.
+- **Daily Journaling**: Express your thoughts with guided prompts, rich text reflection, and quick journal logs.
+- **Guided Breathing & Exercises**: Interactive visual breathing timers (4-7-8 technique, organic breath circle, and sensory grounding).
+- **Mood Tracking & Analytics**: Log your daily emotional states and visualize trends over time.
+- **Ambient Soundscapes**: Soothing background audio and subtle haptic feedback designed to ease stress.
+- **Daily Habits & Prompts**: Track mindfulness habits, daily intentions, and thoughtful prompts.
+- **Adaptive Appearance**: Polished UI with smooth fluid animations and support for light and dark appearance.
 
 ---
 
-## 📱 Screenshots & Demo
+## 🛠️ Project Structure
 
-| Light Mode | Dark Mode |
-| :---: | :---: |
-| *(Add Light Mode Screenshot Here)* | *(Add Dark Mode Screenshot Here)* |
+```
+SOLACE/
+├── SolaceApp.swift             # Application entry point
+├── MainTabView.swift           # Primary navigation tabs
+├── JournalView.swift           # Journaling interface
+├── Views/                      # Reusable SwiftUI views and dashboard cards
+├── Models/                     # Data models (e.g., JournalEntry)
+├── Services/                   # Audio (SoundManager) and haptic feedback
+├── Sources/DesignSystem/       # Theme tokens, styles, and modifiers
+└── Assets.xcassets             # App icons, colors, and media assets
+```
 
 ---
 
-## 🚀 Tech Stack & Requirements
+## 🚀 Getting Started
 
-- **Language**: Swift
-- **UI Framework**: SwiftUI
-- **Minimum iOS Version**: iOS 16.0+
-- **IDE**: Xcode 14.0+
+### Prerequisites
 
----
+- **macOS** with **Xcode 14.0+**
+- **iOS 16.0+** (Simulator or physical device)
+- **Swift 5.7+**
 
-## 🛠️ Getting Started
+### Running the App
 
-1. **Clone the Repository**
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/VibecoderAaditiya/SOLACE.git](https://github.com/VibecoderAaditiya/SOLACE.git)
+   git clone https://github.com/VibecoderAaditiya/SOLACE.git
    cd SOLACE
+   ```
+
+2. Open the project in Xcode:
+   ```bash
+   open SOLACE.xcodeproj
+   ```
+
+3. Select an iOS simulator or connected device running iOS 16.0 or later.
+4. Press **⌘ + R** (or click the **Run** button) to build and run.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
