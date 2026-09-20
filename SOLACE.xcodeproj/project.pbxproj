@@ -27,13 +27,28 @@
 		0833678230415F560015F4AC /* SOLACE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLACE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0833678F30415F580015F4AC /* SOLACETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLACETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0833679930415F580015F4AC /* SOLACEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLACEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EEB96D30558CF90019C999 /* SOLACE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SOLACE.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		08EEB9443051498D0019C999 /* Exceptions for "." folder in "SOLACE" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SOLACETests/SOLACETests.swift,
+				SOLACEUITests/SOLACEUITests.swift,
+			);
+			target = 0833678130415F560015F4AC /* SOLACE */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0833678430415F560015F4AC /* SOLACE */ = {
+		0833678430415F560015F4AC /* . */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SOLACE;
-			sourceTree = "<group>";
+			exceptions = (
+				08EEB9443051498D0019C999 /* Exceptions for "." folder in "SOLACE" target */,
+			);
+			path = .;
+			sourceTree = SOURCE_ROOT;
 		};
 		0833679230415F580015F4AC /* SOLACETests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -69,7 +84,7 @@
 		0833677930415F560015F4AC = {
 			isa = PBXGroup;
 			children = (
-				0833678430415F560015F4AC /* SOLACE */,
+				0833678430415F560015F4AC /* . */,
 				0833679230415F580015F4AC /* SOLACETests */,
 				0833679C30415F580015F4AC /* SOLACEUITests */,
 				0833678330415F560015F4AC /* Products */,
@@ -83,6 +98,11 @@
 				0833678F30415F580015F4AC /* SOLACETests.xctest */,
 				0833679930415F580015F4AC /* SOLACEUITests.xctest */,
 			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08EEB96F30558CF90019C999 /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -100,7 +120,7 @@
 			buildRules = (
 			);
 			fileSystemSynchronizedGroups = (
-				0833678430415F560015F4AC /* SOLACE */,
+				0833678430415F560015F4AC /* . */,
 			);
 			name = SOLACE;
 			productName = SOLACE;
@@ -184,6 +204,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0833678330415F560015F4AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08EEB96F30558CF90019C999 /* Products */;
+					ProjectRef = 08EEB96D30558CF90019C999 /* SOLACE.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0833678130415F560015F4AC /* SOLACE */,
@@ -379,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,11 +413,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Aadi.SOLACE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,11 +445,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Aadi.SOLACE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
